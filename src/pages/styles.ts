@@ -54,6 +54,30 @@ export const TextBackground = styled('div', {
   position: 'absolute',
 })
 export const Presentation = styled('section', {
+  display: 'flex',
+  width: '100%',
+  flexDirection: 'column',
+  textAlign: 'center',
+  alignItems: 'center',
+  color: '$gray900',
+  h1: {
+    paddingBottom: '2rem',
+  },
+})
+export const PresentationContainer = styled('div', {
   display: 'grid',
   gridTemplateColumns: '1fr 1fr',
+  gap: '.5rem',
+  h2: {
+    fontSize: '1',
+    background: '$darkBlue',
+    color: '$white',
+  },
+  p: {
+    lineHeight: '2rem',
+    padding: '1rem',
+    background: '$white',
+    borderRadius: '5px',
+    textAlign: 'left',
+  },
 })

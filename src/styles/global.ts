@@ -8,6 +8,7 @@ export const globalStyles = globalCss({
     scrollBehavior: 'smooth',
   },
   body: {
+    color: '$gray900',
     '-webkit-font-smoothing': 'antialiased',
     background: '$gray100',
   },
@@ -15,5 +16,11 @@ export const globalStyles = globalCss({
     '-webkit-font-smoothing': 'antialiased',
     fontFamily: 'Roboto, sans-serif',
     fontWeight: '400',
+  },
+  'h1,h2,h3,h4,h5': {
+    fontFamily: "'Barlow condensed', serif",
+  },
+  h1: {
+    fontSize: '2rem',
   },
 })

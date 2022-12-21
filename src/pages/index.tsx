@@ -5,6 +5,7 @@ import {
   HomeMain,
   Overlay,
   Presentation,
+  PresentationContainer,
   TextBackground,
 } from './styles'
 import bg from '../assets/bg.jpg'
@@ -31,7 +32,34 @@ export default function App() {
         </TextBackground>
       </Background>
       <HomeMain>
-        <Presentation></Presentation>
+        <Presentation>
+          <h1>UM OCEANO DE OPORTUNIDADES</h1>
+          <PresentationContainer>
+            <iframe
+              width="541"
+              height="314"
+              src="https://www.youtube.com/embed/J1rKAh_IeP4"
+              title="Feira EBS + Congresso MICE Brasil +  Speed Meeting 2022"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            />
+            <div>
+              <h2>
+                PARA VOCÊ QUE REALIZA, PROMOVE, ORGANIZA EVENTOS E TREINAMENTOS
+              </h2>
+              <p>
+                A Feira EBS completou 20 anos, consolidou-se como o maior evento
+                dirigido aos segmentos MICE e T&D realizado no país, englobando
+                a indústria de eventos corporativos, incentivos, treinamentos,
+                congressos e feiras. O evento reuniu toda a cadeia produtiva
+                deste mercado em um único lugar: clientes finais, agências e
+                fornecedores de produtos e serviços, todos em busca de conteúdo,
+                networking qualificado e principalmente oportunidades de
+                negócios.
+              </p>
+            </div>
+          </PresentationContainer>
+        </Presentation>
       </HomeMain>
     </HomeContainer>
   )
