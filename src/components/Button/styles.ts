@@ -18,7 +18,7 @@ export const DefaultButton = styled('button', {
 export const ButtonRadio = styled('button', {
   width: '150px',
   height: '150px',
-  background: '$white',
+  background: '$gray100',
   marginTop: '5rem',
   border: 'none',
   borderRadius: '100%',

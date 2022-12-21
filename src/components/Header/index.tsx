@@ -11,9 +11,10 @@ import {
   NavLink,
   NavList,
   NavTrigger,
+  CloseMobile,
 } from './styles'
 
-import { List } from 'phosphor-react'
+import { List, X } from 'phosphor-react'
 
 import logo from '../../assets/logoEbs.png'
 import { DefaultButton } from '../Button/styles'
@@ -22,6 +23,8 @@ import { useEffect, useState } from 'react'
 export function Header() {
   const [screenSize, setScreenSize] = useState(0)
   useEffect(() => {
+    const initialSize = window.innerWidth
+    setScreenSize(initialSize)
     window.addEventListener('resize', () => {
       const size = window.innerWidth
       return setScreenSize(size)
@@ -38,14 +41,12 @@ export function Header() {
           <BurguerMenuMobile>
             <List size={32} />
           </BurguerMenuMobile>
-          <Dialog.Portal style={{ transition: 'ease 200ms' }}>
+          <Dialog.Portal style={{ animation: 'ease 200ms' }}>
             <ContentMenuMobile>
               <header>
-                <Dialog.Close
-                  style={{ position: 'absolute', top: 0, right: 0 }}
-                >
-                  close
-                </Dialog.Close>
+                <CloseMobile>
+                  <X size={32} />
+                </CloseMobile>
               </header>
               <nav>
                 <ul>
@@ -63,6 +64,40 @@ export function Header() {
                       <li>Fotos 2022</li>
                       <li>Balanço Feira EBS 2022</li>
                       <li>Saiu na Mídia</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <header>
+                      {' '}
+                      <strong>EXPOSITOR</strong>
+                    </header>
+                    <ul>
+                      <li>Perfil do Expositor</li>
+                      <li>Seja Expositor</li>
+                      <li>Lista de Expositores</li>
+                      <li>Planta da feira EBS</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <header>
+                      {' '}
+                      <strong>VISITANTE</strong>
+                    </header>
+                    <ul>
+                      <li>Quem visita</li>
+                      <li>Termos e condições</li>
+                      <li>Programa comprador convidado</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <header>
+                      {' '}
+                      <strong>PROGRAMAÇÃO</strong>
+                    </header>
+                    <ul>
+                      <li>Congresso MICE</li>
+                      <li>Arena Expirience</li>
+                      <li> Palestrantes</li>
                     </ul>
                   </li>
                 </ul>
