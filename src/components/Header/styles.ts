@@ -25,6 +25,10 @@ const exitToLeft = keyframes({
 export const HeaderContainer = styled('header', {
   background: '$gray800',
   display: 'flex',
+
+  zIndex: 100,
+  width: '100%',
+
   alignItems: 'center',
   justifyContent: 'space-between',
   padding: '1rem',
@@ -118,7 +122,7 @@ export const HeaderContainerMobile = styled('header', {
 })
 
 export const ContentMenuMobile = styled(Dialog.Content, {
-  position: 'absolute',
+  position: 'fixed',
 
   top: 0,
   right: 0,

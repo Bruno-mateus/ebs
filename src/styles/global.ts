@@ -6,6 +6,7 @@ export const globalStyles = globalCss({
     margin: 0,
     boxSizing: 'border-box',
     scrollBehavior: 'smooth',
+    position: 'relative',
   },
   body: {
     color: '$gray900',
