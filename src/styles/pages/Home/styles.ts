@@ -1,4 +1,4 @@
-import { styled } from '../../styles'
+import { styled } from '../..'
 
 export const HomeContainer = styled('div', {
   display: 'flex',
@@ -178,6 +178,6 @@ export const ListCardEvent = styled('div', {
     objectFit: 'cover',
   },
   '@media(max-width:760px)': {
-    width: '80%',
+    width: '',
   },
 })

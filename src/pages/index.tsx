@@ -16,7 +16,7 @@ import {
   Presentation,
   PresentationContainer,
   TextBackground,
-} from '../public/styles/styles'
+} from '../styles/pages/Home/styles'
 
 import bg from '../public/assets/bg.jpg'
 import imgEBS from '../public/assets/feiraEBS.jpg'

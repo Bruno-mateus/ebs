@@ -1,5 +1,9 @@
 import { Zoom } from 'react-awesome-reveal'
-import { Attention, PageMiceContainer, PageMiceMain } from './styles'
+import {
+  Attention,
+  PageMiceContainer,
+  PageMiceMain,
+} from '../../styles/pages/congresso-mice/styles'
 import { Button } from '../../components/Button'
 import { Pencil } from 'phosphor-react'
 import { Lecture } from '../../components/Lecture'
