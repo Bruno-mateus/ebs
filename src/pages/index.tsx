@@ -19,9 +19,9 @@ import {
 } from './styles'
 
 import bg from './../assets/bg.jpg'
-import imgEBS from './../assets/feira-ebs.jpg'
-import mice from './../assets/congresso-mice.jpg'
-import speedMeeting from '../assets/speed-meeting.jpg'
+import imgEBS from './../assets/feiraEBS.jpg'
+import mice from './../assets/congressoNice.jpg'
+import speedMeeting from '../assets/speedMeeting.jpg'
 
 export default function App() {
   const videoOptions = {
