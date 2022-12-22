@@ -18,9 +18,9 @@ import {
   TextBackground,
 } from './styles'
 
-import bg from '../assets/bg.jpg'
-import imgEBS from '../assets/feira-ebs.jpg'
-import mice from '../assets/congresso-mice.jpg'
+import bg from './../assets/bg.jpg'
+import imgEBS from './../assets/feira-ebs.jpg'
+import mice from './../assets/congresso-mice.jpg'
 import speedMeeting from '../assets/speed-meeting.jpg'
 
 export default function App() {
