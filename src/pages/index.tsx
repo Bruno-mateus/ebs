@@ -38,7 +38,7 @@ export default function App() {
   return (
     <HomeContainer>
       <Background>
-        <Image src={bg} alt="" sizes="100%" />
+        <Image src={bg.src} alt="" width={600} height={600} sizes="100%" />
         <Overlay></Overlay>
         <TextBackground>
           <Fade>
@@ -159,7 +159,7 @@ export default function App() {
             <Reveal delay={200}>
               <ListCardEvent>
                 <h2>Feira EBS</h2>
-                <Image src={imgEBS} alt="" />
+                <Image src={imgEBS.src} width={600} height={600} alt="" />
                 <p>
                   A <strong>Feira EBS </strong> apresenta a maior exposição de
                   empresas fornecedoras de soluções para eventos corporativos,
@@ -172,7 +172,7 @@ export default function App() {
             <Reveal delay={350}>
               <ListCardEvent>
                 <h2>Congresso MICE</h2>
-                <Image src={mice} alt="" />
+                <Image src={mice.src} width={600} height={600} alt="" />
                 <p>
                   O <strong>Congresso MICE Brasil</strong> proporciona conteúdos
                   de alto nível, trazendo uma visão do futuro dos eventos, novas
@@ -185,7 +185,7 @@ export default function App() {
             <Reveal delay={500}>
               <ListCardEvent>
                 <h2>Speed Meeting</h2>
-                <Image src={speedMeeting} alt="" />
+                <Image src={speedMeeting.src} width={600} height={600} alt="" />
                 <p>
                   O <strong>Speed Meeting EBS</strong> é a rodada de negócios da
                   Feira EBS, que tem como objetivo aproximar expositores e
