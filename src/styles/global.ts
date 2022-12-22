@@ -7,10 +7,11 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box',
     scrollBehavior: 'smooth',
     position: 'relative',
+    '-webkit-font-smoothing': 'antialiased',
   },
   body: {
     color: '$gray900',
-    '-webkit-font-smoothing': 'antialiased',
+
     background: '$gray100',
   },
   'body,input,button,textarea': {

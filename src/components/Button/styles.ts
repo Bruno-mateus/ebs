@@ -2,19 +2,26 @@ import { styled } from '../../styles'
 
 export const DefaultButton = styled('button', {
   textAlign: 'center',
+  alignItems: 'center',
+  justifyContent: 'center',
   padding: '1rem',
-  background: 'transparent',
-  color: '$white',
+  maxWidth: '180px',
+  display: 'flex',
+
+  gap: '.5rem',
   border: '2px solid $white',
   borderRadius: '8px',
   fontSize: '1rem',
   fontWeight: 'bold',
   cursor: 'pointer',
   transition: 'ease-out 200ms',
+  background: 'transparent',
+  color: '$white',
   '&:hover': {
     background: '$gray700',
   },
 })
+
 export const ButtonRadio = styled('button', {
   width: '150px',
   height: '150px',

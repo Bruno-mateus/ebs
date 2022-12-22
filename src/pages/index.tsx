@@ -146,15 +146,27 @@ export default function App() {
               </header>
               <MapPin size={60} />
 
-              <p>
-                Centro de Convenções Rebouças, Av. Rebouças, 600 - Pinheiros -
-                São Paulo - SP
-              </p>
+              <p>Av. Rebouças, 600 - Pinheiros - São Paulo - SP</p>
             </CardEvent>
           </Reveal>
         </AboutEvent>
+        <div
+          style={{
+            display: 'flex',
+            width: '100%',
+            background: '#121214',
+            padding: '1rem',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Button title="Seja um expositor" color="red" />
+        </div>
         <MainEvent>
-          <h1>O que você vai encontrar na EBS 2023?</h1>
+          <Zoom>
+            <h1>O que você vai encontrar na EBS 2023?</h1>
+          </Zoom>
+
           <ListEvent>
             <Reveal delay={200}>
               <ListCardEvent>

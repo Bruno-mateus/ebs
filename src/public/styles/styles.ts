@@ -103,7 +103,7 @@ export const AboutEvent = styled('section', {
   gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr',
   marginTop: '4rem',
   padding: '1rem',
-  gap: '2rem',
+  gap: '1rem',
   '@media(max-width:760px)': {
     gridTemplateColumns: '1fr 1fr ',
   },
@@ -114,16 +114,17 @@ export const CardEvent = styled('div', {
   alignItems: 'center',
   textAlign: 'center',
   gap: '.8rem',
-  justifyContent: 'center',
+
   color: '$gray900',
   paddingBottom: '1rem',
   borderRadius: '10px',
   boxShadow: '1px 1px 1px rgba(0,0,0,0.1)',
-  height: '200px',
+  height: '250px',
   fontSize: '1rem',
   backgroundColor: '$white',
+  width: '100%',
   p: {
-    padding: '.4rem',
+    padding: '.8rem',
   },
   svg: {
     color: '$darkBlue',

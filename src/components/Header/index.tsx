@@ -19,6 +19,7 @@ import { List, X } from 'phosphor-react'
 import logo from '../../public/assets/logoEbs.png'
 import { DefaultButton } from '../Button/styles'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 export function Header() {
   const [screenSize, setScreenSize] = useState(0)
@@ -31,11 +32,12 @@ export function Header() {
     })
   }, [])
 
-  console.log(screenSize)
   if (screenSize < 960) {
     return (
       <HeaderContainerMobile>
-        <Image src={logo} width={90} alt="" />
+        <Link href={'/'}>
+          <Image src={logo} width={90} alt="" />
+        </Link>
 
         <Dialog.Root>
           <BurguerMenuMobile>
@@ -111,7 +113,9 @@ export function Header() {
 
   return (
     <HeaderContainer>
-      <Image src={logo} alt="" width={180} />
+      <Link href={'/'}>
+        <Image src={logo} width={180} alt="" />
+      </Link>
       <div>
         <NavHeader>
           <NavigationMenu.Root>
