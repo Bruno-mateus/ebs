@@ -18,10 +18,10 @@ import {
   TextBackground,
 } from './styles'
 
-import bg from './../assets/bg.jpg'
-import imgEBS from './../assets/feiraEBS.jpg'
-import mice from './../assets/congressoNice.jpg'
-import speedMeeting from '../assets/speedMeeting.jpg'
+import bg from '../public/assets/bg.jpg'
+import imgEBS from '../public/assets/feiraEBS.jpg'
+import mice from '../public/assets/congressoMice.jpg'
+import speedMeeting from '../public/assets/speedMeeting.jpg'
 
 export default function App() {
   const videoOptions = {

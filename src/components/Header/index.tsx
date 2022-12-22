@@ -16,7 +16,7 @@ import {
 
 import { List, X } from 'phosphor-react'
 
-import logo from '../../assets/logoEbs.png'
+import logo from '../../public/assets/logoEbs.png'
 import { DefaultButton } from '../Button/styles'
 import { useEffect, useState } from 'react'
 
